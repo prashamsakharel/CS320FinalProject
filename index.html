@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotivationApp</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./sources/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./sources/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./sources/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./sources/favicon_io/site.webmanifest" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="#home" class="nav-item">Daily Motivation</a>
+      <a href="#dashboard" class="nav-item">Profile</a>
+      <a href="#contact-form-container" class="nav-item">Contact Us</a>
+    </div>
+
+    <div class="main" id="home">
+      <p class="quote-of-the-day">Quote of the day!</p>
+      <div class="main-quote">
+        <!-- Favorite Star Icon -->
+        <img
+          id="favorite-star"
+          src="./sources/outline-star-128.png"
+          alt="Favorite Star"
+        />
+        <!-- Instagram Icon -->
+        <img
+          id="instagram-icon"
+          src="./sources/icons8-instagram-128.png"
+          alt="Instagram Icon"
+        />
+      </div>
+      <div class="next-button">Next Quote</div>
+      <div class="saved-quote-container"></div>
+    </div>
+    <!-- Dashboard -->
+    <div id="dashboard">
+      <h2>Dashboard</h2>
+
+      <!-- Shared to Instagram Section -->
+      <div class="section">
+        <h3>Shared to Instagram</h3>
+        <div id="shared-instagram" class="saved-quote-container">
+          <!-- Dynamically added divs -->
+        </div>
+      </div>
+
+      <!-- Saved Quotes Section -->
+      <div class="section">
+        <h3>Saved Quotes</h3>
+        <div id="saved-quotes" class="saved-quote-container">
+          <!-- Dynamically added divs -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote Preview -->
+    <div id="quote-preview" class="hidden">
+      <div id="quote-preview-content">
+        <img id="quote-preview-img" src="" alt="Quote Preview" />
+        <div id="quote-preview-close">×</div>
+      </div>
+    </div>
+    <div id="contact-form-container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea
+            id="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit-btn">Send Message</button>
+        </div>
+      </form>
+      <div id="form-success" class="hidden">
+        Thank you for reaching out! We will get back to you soon.
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">Designed and Created by Prashamsa © 2024/2025</div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
